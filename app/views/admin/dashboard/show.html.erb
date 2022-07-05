@@ -1,7 +1,13 @@
-<h1>Admin Dashboard</h1>
-<p>
-  <ul>
-    <li>There are <%= @categories_count %> categories in the database</li>
-    <li>There are <%= @products_count %> <%= link_to "Products", admin_products_path %> in the database</li>
-  </ul>
-</p>
+<section class="admin-dashboard">
+
+  <header class="page-header">
+    <h1>Admin Dashboard</h1>
+  </header>
+  <p>
+    <ul>
+      <li>There are <%= @categories_count %> categories in the database</li>
+      <li>There are <%= @products_count %> <%= link_to "Products", admin_products_path %> in the database</li>
+    </ul>
+  </p>
+
+</section>
