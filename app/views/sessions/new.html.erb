@@ -1,0 +1,21 @@
+<section class="login-page">
+
+  <header class="page-header">
+    <h1>Login!</h1>
+  </header>
+
+  <%= form_tag '/login' do %>
+
+    <% if flash[:notice_login] %>
+      <div class="alert alert-danger">
+        <strong><%= flash[:notice_login] %></strong>
+      </div>
+    <% end %>
+    
+    Email: <%= text_field_tag :email %>
+    Password: <%= password_field_tag :password %>
+    <%= submit_tag "Submit" %>
+
+  <% end %>
+
+</section>
